@@ -1,0 +1,38 @@
+#output {
+  overflow-y: auto;
+  width: 300px;
+  height: 200px;
+  background-color: lightgray;
+}
+
+#inputPanel {
+  position: absolute;
+  width: 300px;
+  height: 25px;
+  background-color: gray;
+}
+
+#textInput {
+  box-sizing: border-box;
+  border: 1px lightgray solid;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 25px;
+  width: 200px;
+}
+
+#klickButton {
+  box-sizing: border-box;
+  border: 0px;
+  background-color: #ffaaaa;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100px;
+}
+
+.testClass {
+  color: red;
+}

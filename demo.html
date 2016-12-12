@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <script src="UtilIO.js"></script>
+    <link rel="stylesheet" href="demo.css">
+  </head>
+  <body>
+    <div id="output">
+    </div>
+    <div id="inputPanel">
+      <input type="text" id="textInput" value="">
+      <button id="klickButton">Klick</button>
+    </div>
+    <!-- JavaScript -->
+    <script>
+      var io = new UtilIO('textInput', 'output');
+      function simpleEcho() {
+        console.log(this.getText());
+        this.appendText(this.getText());
+        this.scrollToEnd();
+        this.clearText();
+      }
+      io.setProcessFunction(simpleEcho);
+      io.registerButton('klickButton');
+    </script>
+  </body>
+</html>
