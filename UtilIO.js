@@ -1,3 +1,5 @@
+/* jshint esversion:6 */
+/* jshint browser:true */
 
 class UtilIO {
 
@@ -24,7 +26,7 @@ class UtilIO {
     var self = this;
     document.getElementById(buttonId).addEventListener('click', function() {
       self.processFunction();
-    })
+    });
   }
 
   getText() {
