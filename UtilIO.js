@@ -47,7 +47,8 @@ class UtilIO {
   }
 
   scrollToEnd() {
-    this.outputElement.scrollTo(0, this.outputElement.scrollHeight);
+    //this.outputElement.scrollTo(0, this.outputElement.scrollHeight); // <- geht nur im Firefox
+    this.outputElement.lastChild.scrollIntoView();
   }
 
 }
